@@ -54,6 +54,22 @@ function xiaomi() {
             </div>
 
             <div className="justify-center center bg-[#f9dfb3] rounded-lg p-6 shadow-2xl cursor-pointer">
+              <Link href="/xiaomi/daisy">
+                <img
+                  className="justify-center center mx-auto my-4 h-40 w-auto"
+                  src="https://raw.githubusercontent.com/Havoc-OS/Devices/thirteen/images/daisy.png"
+                  alt=""
+                />
+                <h3 className="text-xl text-center font-semibold mb-2">
+                  Xiaomi Mi A2 Lite
+                </h3>
+                <p className="text-blue-700 text-lg font-serif text-center">
+                  daisy
+                </p>
+              </Link>
+            </div>
+
+            <div className="justify-center center bg-[#f9dfb3] rounded-lg p-6 shadow-2xl cursor-pointer">
               <Link href="/xiaomi/toco">
                 <img
                   className="justify-center center mx-auto my-4 h-40 w-auto"
