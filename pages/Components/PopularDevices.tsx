@@ -78,9 +78,12 @@ function PopularDevices() {
       <section className=" object-contain max-h-full">
         <div className="flex flex-row mb-8 mt-10 justify-between mx-2">
           <h2 className="md:text-5xl text-2xl">Popular Devices</h2>
-          <h1 className=" text-base mt-1 md:mt-7 underline underline-offset-2 text-blue-700">
+          <Link
+            href="/devices"
+            className=" text-base mt-1 md:mt-7 underline underline-offset-2 text-blue-700"
+          >
             View All
-          </h1>
+          </Link>
         </div>
         {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"> */}
         <div className="flex flex-row p-4 space-x-5 overflow-x-auto whitespace-nowrap devices OverflowY">
