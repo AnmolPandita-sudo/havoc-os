@@ -108,9 +108,6 @@ function PopularDevices() {
             </div>
           ))}
         </div>
-        <p className=" justify-end flex flex-row">
-          <Lottie animationData={SwipeLeft} className="h-24 -mt-4" />
-        </p>
       </section>
     </div>
   );

@@ -19,8 +19,8 @@ function HomeScreen() {
       </head>
       <div className="mx-auto bg-gradient-to-r from-[#dae6f1] via-blue-100 to-[#dae6f1] p-2 outline-double  outline-4 outline-offset-2 shadow-2xl mt-2">
         <div className="space-y-3 flex-flex-col justify-center items-center text-center">
-          <h1 className=" font-serif text-4xl font-semibold">
-            Welcome to Havoc OS
+          <h1 className=" font-serif text-4xl mx-2 font-semibold">
+            Welcome to Havoc-OS
           </h1>
           <p className="md:text-2xl text-xl mt-4 font-serif">
             A community-driven Android ROM built on the foundation of the
@@ -78,20 +78,12 @@ function HomeScreen() {
             href={"/devices"}
             className="bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-full flex flex-row"
           >
-            <Lottie
-              animationData={DownloadAnimation}
-              className="bg-[#2f7bdf] text-white w-10 -mt-2"
-            />
             Download
           </Link>
           <Link
             href={"/changelog"}
             className="bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-full flex flex-row"
           >
-            <Lottie
-              animationData={ChangeLogAnimation}
-              className="bg-[#2f7bdf] text-white  w-10 -mt-2"
-            />
             Changelog
           </Link>
         </div>
