@@ -28,7 +28,7 @@ export default function RootLayout({
           <title>Havoc-OS</title>
         </head>
         <body className={inter.className}>
-          <Header />
+          {/* <Header /> */}
           {children}
           <Footer />
         </body>

@@ -24,7 +24,7 @@ function Home() {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      {/* <Header /> */}
+      <Header />
       <HomeScreen />
       <ScrollToTopButton />
       <PopularDevices />

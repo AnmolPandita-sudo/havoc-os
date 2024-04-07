@@ -47,31 +47,37 @@ function Navbar({}) {
   }, []);
 
   return (
-    <nav className="sticky z-1 top-0 flex items-center justify-between p-4 bg-blue-200 shadow-2xl">
-      <button className="flex items-center">
+    <nav className="sticky z-1 top-0 flex items-center justify-between p-4">
+      <button className="flex items-center bg-white rounded-xl md:h-16 md:w-48 h-12 w-36">
         <Link href="/">
-          <Image src={logo} alt="Logo" width={150} height={150} />
+          <Image
+            src={logo}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="ml-4 md:h-12 md:w-36 h-10 w-28"
+          />
         </Link>
       </button>
 
       <div className="hidden md:block">
-        <div className="flex items-center space-x-3">
-          <h1>|</h1>
+        <div className="flex items-center space-x-3 bg-white rounded-3xl h-16">
+          <h1 className="ml-2 -mr-2">|</h1>
           <button
             onClick={() => {
               router.push("/");
             }}
-            className="hover:cursor-pointer transition ease-in-out duration-1000 hover:border-gray-500 hover:border-b-2 hover:mt-[1px] text-md flex items-center space-x-1"
+            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-20 h-9 hover:text-white font-medium"
           >
-            <AiOutlineHome />
+            <AiOutlineHome className="ml-1" />
             <span>Home</span>
           </button>
           <h1>|</h1>
           <Link
             href="/devices"
-            className="hover:cursor-pointer transition ease-in-out duration-1000 hover:border-gray-500 hover:border-b-2 hover:mt-[1px] text-md flex items-center space-x-1"
+            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-[90px] h-9 hover:text-white font-medium"
           >
-            <AiOutlineMobile />
+            <AiOutlineMobile className="ml-1" />
             Devices
           </Link>
           <h1>|</h1>
@@ -80,9 +86,9 @@ function Navbar({}) {
             smooth={true}
             duration={500}
             onClick={scrollToSection}
-            className="hover:cursor-pointer transition ease-in-out duration-1000 hover:border-gray-500 hover:border-b-2 hover:mt-[1px] text-md flex items-center space-x-1"
+            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-32 h-9 hover:text-white font-medium"
           >
-            <MdOutlineScreenshot />
+            <MdOutlineScreenshot className="ml-1" />
             ScreenShots
           </ScrollLink>
           <h1>|</h1>
@@ -90,9 +96,9 @@ function Navbar({}) {
             to="features"
             smooth={true}
             duration={500}
-            className="hover:cursor-pointer transition ease-in-out duration-1000 hover:border-gray-500 hover:border-b-2 hover:mt-[1px] text-md flex items-center space-x-1"
+            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-24 h-9 hover:text-white font-medium"
           >
-            <BsFillLightningChargeFill />
+            <BsFillLightningChargeFill className="ml-1" />
             Features
           </ScrollLink>
           <h1>|</h1>
@@ -100,26 +106,44 @@ function Navbar({}) {
             to="teams"
             smooth={true}
             duration={500}
-            className="hover:cursor-pointer transition ease-in-out duration-1000 hover:border-gray-500 hover:border-b-2 hover:mt-[1px] text-md flex items-center space-x-1"
+            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-[85px] h-9 hover:text-white font-medium"
           >
-            <MdGroup />
+            <MdGroup className="ml-1" />
             Teams
           </ScrollLink>
           <h1>|</h1>
           <Payment isOpenByDefault={false} />
-          <h1>|</h1>
+          <h1 className="">|</h1>
+          <span>
+            <h1> </h1>
+          </span>
         </div>
       </div>
 
-      <div className=" absulute md:hidden">
+      {/* .
+      .
+      .
+      .
+      .
+      ..
+      .
+      . */}
+
+      <div className=" absulute md:hidden flex flex-row">
+        <div className="bg-white rounded-xl h-12 w-32 text-[#2D2CF6] font-light text-lg p-2 mt-2">
+          <Payment isOpenByDefault={false} />
+        </div>
         <div
-          className="block px-4 py-2 text-blue-500 focus:outline-none"
+          className="block px-4 py-2 text-[#2D2CF6] focus:outline-none"
           onClick={handleDropdown}
         >
-          <MdOutlineSegment style={{ fontSize: "2rem" }} className="" />
+          <MdOutlineSegment
+            style={{ fontSize: "2rem" }}
+            className="bg-white rounded-xl h-12 w-10"
+          />
           {dropdown && (
             <div
-              className=" absolute right-[14px] mt-2 w-11/12 bg-white rounded-lg shadow-lg z-10 h-[700px] md:h-[600px]"
+              className=" absolute right-[14px] mt-2 w-11/12 bg-white rounded-lg shadow-lg z-10 h-[700px] md:h-[600px] "
               onMouseLeave={handleDropdown}
             >
               <ul className=" list-none p-2  my-10">

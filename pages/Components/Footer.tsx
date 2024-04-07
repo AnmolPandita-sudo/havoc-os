@@ -19,7 +19,7 @@ function Footer() {
         <title>Havoc-OS</title>
       </head>
 
-      <div className="flex md:flex-row justify-between flex-col bg-gradient-to-r from-[#d3d8df] via-[#e7eaee] to-[#d3d8df] h-42 md:h-28">
+      <div className="flex md:flex-row justify-between flex-col bg-gradient-to-r from-[#d3d8df] via-[#e7eaee] to-[#d3d8df] h-42 md:h-24">
         <div className=" flex md:flex-row flex-col md:p-5 p-6 ">
           <Link href="/">
             <Image
