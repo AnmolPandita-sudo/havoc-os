@@ -41,7 +41,7 @@ function ScreenShots() {
           slidesPerView={"auto"}
           navigation
           loop={true}
-          autoplay={{ delay: 500 }}
+          autoplay={{ delay: 600 }}
           speed={1000}
           effect={"coverflow"}
           grabCursor={true}
@@ -59,14 +59,14 @@ function ScreenShots() {
           {slideImages.map((slide, index) => (
             <SwiperSlide
               key={index}
-              className="flex items-center justify-center w-50 mb-10 relative filter:drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));"
+              className="flex items-center justify-center w-50 mb-10 sticky filter:drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));"
             >
               <Image
                 src={slide}
                 alt={`Slide ${index + 1}`}
                 width={200}
                 height={100}
-                className=" flex-row mx-auto items-center justify-center flex border-black rounded-xl "
+                className="sticky flex-row mx-auto items-center justify-center flex border-black rounded-xl "
               />
             </SwiperSlide>
           ))}

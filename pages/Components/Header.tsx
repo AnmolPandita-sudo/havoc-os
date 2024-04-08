@@ -47,7 +47,7 @@ function Navbar({}) {
   }, []);
 
   return (
-    <nav className="sticky z-1 top-0 flex items-center justify-between p-4">
+    <nav className="sticky z-10 top-0 flex items-center justify-between p-4">
       <button className="flex items-center bg-white rounded-xl md:h-16 md:w-48 h-12 w-36">
         <Link href="/">
           <Image
