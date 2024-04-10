@@ -8,6 +8,7 @@ import Head from "next/head";
 import Header from "@/pages/Components/Header";
 import Link from "next/link";
 import Footer from "@/pages/Components/Footer";
+import "app/globals.css";
 
 const Privacy = () => {
   return (

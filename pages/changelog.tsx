@@ -6,6 +6,7 @@ import Header from "@/pages/Components/Header";
 import Footer from "@/pages/Components/Footer";
 import Head from "next/head";
 import Link from "next/link";
+import "app/globals.css";
 
 function AboutUs() {
   return (

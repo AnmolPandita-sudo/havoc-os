@@ -17,6 +17,7 @@ import logo from "@/pages/images/artboard__1_-removebg-preview.png";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+import ThoughtOfTheDay from "./ThoughtOfTheDay";
 
 function Navbar({}) {
   const router = useRouter();
@@ -48,7 +49,7 @@ function Navbar({}) {
 
   return (
     <nav className="sticky z-10 top-0 flex items-center justify-between p-4">
-      <button className="flex items-center bg-white rounded-xl md:h-16 md:w-48 h-12 w-36">
+      <button className="flex items-center bg-[#dcd7d7] rounded-xl md:h-16 md:w-48 h-12 w-36">
         <Link href="/">
           <Image
             src={logo}
@@ -61,62 +62,49 @@ function Navbar({}) {
       </button>
 
       <div className="hidden md:block">
-        <div className="flex items-center space-x-3 bg-white rounded-3xl h-16">
-          <h1 className="ml-2 -mr-2">|</h1>
-          <button
-            onClick={() => {
-              router.push("/");
-            }}
-            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-20 h-9 hover:text-white font-medium"
-          >
+        <div className="flex items-center space-x-3  h-16 mr-3 bg-[#dcd7d7] rounded-full w-34">
+          <Link href="/" className="headerButton fontDuration ml-5">
             <AiOutlineHome className="ml-1" />
             <span>Home</span>
-          </button>
-          <h1>|</h1>
-          <Link
-            href="/devices"
-            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-[90px] h-9 hover:text-white font-medium"
-          >
-            <AiOutlineMobile className="ml-1" />
+          </Link>
+
+          <Link href="/devices" className="headerButton fontDuration">
+            <AiOutlineMobile />
             Devices
           </Link>
-          <h1>|</h1>
+
           <ScrollLink
             to="screenshots"
             smooth={true}
             duration={500}
             onClick={scrollToSection}
-            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-32 h-9 hover:text-white font-medium"
+            className="headerButton fontDuration w-36"
           >
-            <MdOutlineScreenshot className="ml-1" />
+            <MdOutlineScreenshot />
             ScreenShots
           </ScrollLink>
-          <h1>|</h1>
+
           <ScrollLink
             to="features"
             smooth={true}
             duration={500}
-            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-24 h-9 hover:text-white font-medium"
+            className="headerButton fontDuration"
           >
-            <BsFillLightningChargeFill className="ml-1" />
+            <BsFillLightningChargeFill />
             Features
           </ScrollLink>
-          <h1>|</h1>
+
           <ScrollLink
             to="teams"
             smooth={true}
             duration={500}
-            className="hover:cursor-pointer transition ease-in-out duration-600 hover:border-gray-500 hover:bg-[#5454ee] hover:mt-[1px] text-md flex items-center space-x-1 rounded-full w-[85px] h-9 hover:text-white font-medium"
+            className="headerButton fontDuration"
           >
             <MdGroup className="ml-1" />
             Teams
           </ScrollLink>
-          <h1>|</h1>
+
           <Payment isOpenByDefault={false} />
-          <h1 className="">|</h1>
-          <span>
-            <h1> </h1>
-          </span>
         </div>
       </div>
 
@@ -129,8 +117,8 @@ function Navbar({}) {
       .
       . */}
 
-      <div className=" absulute md:hidden flex flex-row">
-        <div className="bg-white rounded-xl h-12 w-32 text-[#2D2CF6] font-light text-lg p-2 mt-2">
+      <div className=" absulute md:hidden flex flex-row ">
+        <div className="bg-[#dcd7d7] rounded-xl h-12 w-32 text-[#2D2CF6] font-light text-lg mt-2">
           <Payment isOpenByDefault={false} />
         </div>
         <div
@@ -139,11 +127,11 @@ function Navbar({}) {
         >
           <MdOutlineSegment
             style={{ fontSize: "2rem" }}
-            className="bg-white rounded-xl h-12 w-10"
+            className="bg-[#dcd7d7] rounded-xl h-12 w-10"
           />
           {dropdown && (
             <div
-              className=" absolute right-[14px] mt-2 w-11/12 bg-white rounded-lg shadow-lg z-10 h-[700px] md:h-[600px] "
+              className=" absolute right-[14px] mt-2 w-11/12 bg-white rounded-lg shadow-lg z-10  h-11/12 "
               onMouseLeave={handleDropdown}
             >
               <ul className=" list-none p-2  my-10">
@@ -232,11 +220,10 @@ function Navbar({}) {
                   </ScrollLink>
                 </li>
               </ul>
-              <span className="flex items-center justify-center px-4 my-5">
-                <MdCancel className=" h-16 w-16 mx-auto md:hidden" />
-              </span>
 
-              <div className="flex md:flex-col flex-row mx-10 space-x-5 text-center justify-center font-dancing-script text-xl mt-5">
+              {/* flex md:w-14 md:h-14 h-8 w-8 bottom-2 items-center justify-center cursor-pointer */}
+
+              <div className="flex md:flex-col flex-col space-y-3 text-center justify-center font-crimson text-xl">
                 <p>
                   {dateTime.toLocaleDateString(undefined, {
                     weekday: "long",
@@ -253,6 +240,10 @@ function Navbar({}) {
                   })}
                 </p>
               </div>
+              <ThoughtOfTheDay />
+              <span className="flex items-center justify-center px-4 my-5 ">
+                <MdCancel className=" h-8 w-8 mx-auto md:hidden" />
+              </span>
             </div>
           )}
         </div>

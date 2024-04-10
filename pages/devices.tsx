@@ -15,6 +15,7 @@ import { Fade } from "react-awesome-reveal";
 import Head from "next/head";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
 import { BsArrowBarRight } from "react-icons/bs";
+import "app/globals.css";
 
 function Devices() {
   const [isOpen, setIsOpen] = useState(false);

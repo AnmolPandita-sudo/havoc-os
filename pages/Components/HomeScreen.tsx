@@ -42,48 +42,42 @@ function HomeScreen() {
           </h4>
         </div>
       </div>
-      <div className="rounded-3xl px-4 bg-gradient-to-r from-[#f1f5f9] via-[#e9c599] to-[#f1f5f9]  min-h-full min-w-full">
-        <div className="flex flex-row md:ml-5 items-center text-center justify-center">
-          {/* <Image src={logo1} alt="lockscreen" height={100} className="mt-2" /> */}
+      <div className="rounded-3xl px-4  min-h-full min-w-full p-2 outline-double  outline-4 outline-offset-2 shadow-2xl">
+        <div className="flex md:flex-row flex-col justify-between ">
+          <div className="mt-5 bg-[#eaf3ff] text-center rounded-3xl mb-3 w-auto md:w-1/2 flex flex-col md:flex-col ml-auto md:ml-20 md:mt-10">
+            <p className="font-medium font-serif ... m-5">
+              Havoc-OS is an after-market firmware based on Android Open Source
+              Project, inspired by Google Pixel with a refined Material Design
+              UI. We offer a smooth and stable experience for your device with a
+              selected set of amazing features that provide an exceptional user
+              experience.
+            </p>
+            <p className="font-semibold">
+              Our ROM is available for over 150+ Devices across 20+ OEMs.
+            </p>
+            <p className="m-3">
+              Generic System Images (GSI) are available so you can try out our
+              ROM even if your device is not currently supported. Our device
+              roster keeps growing with support for more devices added every
+              month.
+            </p>
+          </div>
+          <div className="flex flex-col md:ml-5 items-center text-center justify-center">
+            <Image
+              src="https://havoc-os.com/src/img/screenshots/Device.png"
+              alt="lockscreen"
+              height={100}
+              width={150}
+              className="md:mt-8 md:mr-32"
+            />
+          </div>
         </div>
 
-        <div className="mt-5 bg-[#eaf3ff] text-center rounded-3xl mb-3 w-auto md:w-1/2 flex flex-col md:flex-col ml-auto md:ml-20 md:mt-10">
-          <p className="font-medium font-serif ... m-5">
-            Havoc-OS is an after-market firmware based on Android Open Source
-            Project, inspired by Google Pixel with a refined Material Design UI.
-            We offer a smooth and stable experience for your device with a
-            selected set of amazing features that provide an exceptional user
-            experience.
-          </p>
-          <p className="font-semibold">
-            Our ROM is available for over 150+ Devices across 20+ OEMs.
-          </p>
-          <p className="m-3">
-            Generic System Images (GSI) are available so you can try out our ROM
-            even if your device is not currently supported. Our device roster
-            keeps growing with support for more devices added every month.
-          </p>
-        </div>
-
-        <Image
-          src="https://havoc-os.com/src/img/screenshots/Device.png"
-          alt=""
-          height={100}
-          width={150}
-          className="flex flex-row justify-center items-center text-center ml-auto mr-auto md:ml-auto md:mr-24 mt-10 mb-5 md:-mt-60"
-        />
-
-        <div className="flex space-x-4 ml-auto md:justify-center items-center text-center justify-center md:-mt-10 ">
-          <Link
-            href={"/devices"}
-            className="bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-full flex flex-row"
-          >
+        <div className="flex space-x-4 ml-auto md:justify-center items-center text-center justify-center mt-7 ">
+          <Link href={"/devices"} className="homeScreenButton">
             Download
           </Link>
-          <Link
-            href={"/changelog"}
-            className="bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-full flex flex-row"
-          >
+          <Link href={"/changelog"} className="homeScreenButton">
             Changelog
           </Link>
         </div>

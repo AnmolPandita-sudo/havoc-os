@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontSize: {
+        md: ["1rem", "1.10rem"], // Replace the values as needed
+      },
       fontFamily: {
         sans: ['"Google Sans"', "ui-sans-serif", "system-ui"],
         pacifico: ["Pacifico", "ui-cursive", "cursive"],

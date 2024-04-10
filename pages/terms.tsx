@@ -6,6 +6,7 @@ import Header from "@/pages/Components/Header";
 import Head from "next/head";
 import React from "react";
 import Footer from "@/pages/Components/Footer";
+import "app/globals.css";
 
 function terms() {
   return (

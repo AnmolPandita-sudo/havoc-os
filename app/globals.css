@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap');
 
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -39,4 +40,24 @@ body {
 .devices {
   overflow-y: hidden;
   overflow-x: scroll;
+}
+
+
+@layer components {
+  .headerButton {
+    @apply hover:cursor-pointer transition ease-in-out hover:bg-[#ffffff] flex items-center justify-center rounded-lg w-32 h-9 hover:text-[#3729ff] font-medium text-center
+  }
+
+  .homeScreenButton {
+    @apply bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-lg flex flex-row font-crimson
+  }
+}
+
+@layer utilities {
+  .fontDuration {
+    transition-duration: 300ms;
+    font-size: 1.10rem;
+    /* Change the value as needed */
+    line-height: 1.25rem;
+  }
 }

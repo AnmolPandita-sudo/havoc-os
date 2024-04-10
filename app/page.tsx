@@ -15,7 +15,7 @@ import ScrollToTopButton from "@/pages/Components/ScrollToTopButton";
 
 function Home() {
   return (
-    <div className="bg-[#eedfdf]">
+    <div className="bg-[#D6E8FE]">
       <head>
         <script
           async
