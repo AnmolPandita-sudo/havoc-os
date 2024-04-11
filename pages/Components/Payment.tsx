@@ -36,7 +36,10 @@ const Payment: React.FC<ModalProps> = ({ isOpenByDefault }: ModalProps) => {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      <button className="headerButton fontDuration mr-5 " onClick={openModal}>
+      <button
+        className="hover:cursor-pointer transition ease-in-out md:hover:bg-[#ffffff] flex items-center justify-center rounded-lg w-32 h-9 hover:text-[#3729ff] font-medium text-center fontDuration mr-5 "
+        onClick={openModal}
+      >
         <FaDonate className="mr-1 md:ml-2 md:mt-0 mt-3" />
         <span className="md:mt-0 mt-3">Support</span>
       </button>

@@ -19,7 +19,21 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import ThoughtOfTheDay from "./ThoughtOfTheDay";
 
-function Navbar({}) {
+interface ModalProps {
+  isOpenByDefault: boolean;
+}
+
+const Navbar: React.FC<ModalProps> = ({ isOpenByDefault }: ModalProps) => {
+  const [isOpen, setIsOpen] = useState(isOpenByDefault);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   const router = useRouter();
   const [dateTime, setDateTime] = useState(new Date());
 
@@ -125,11 +139,15 @@ function Navbar({}) {
           className="block px-4 py-2 text-[#2D2CF6] focus:outline-none"
           onClick={handleDropdown}
         >
-          <MdOutlineSegment
-            style={{ fontSize: "2rem" }}
-            className="bg-[#dcd7d7] rounded-xl h-12 w-10"
-          />
-          {dropdown && (
+          <button>
+            <MdOutlineSegment
+              style={{ fontSize: "2rem" }}
+              className="bg-[#dcd7d7] rounded-xl h-12 w-10"
+              onClick={openModal}
+            />
+          </button>
+
+          {isOpen && (
             <div
               className=" absolute right-[14px] mt-2 w-11/12 bg-white rounded-lg shadow-lg z-10  h-11/12 "
               onMouseLeave={handleDropdown}
@@ -223,7 +241,7 @@ function Navbar({}) {
 
               {/* flex md:w-14 md:h-14 h-8 w-8 bottom-2 items-center justify-center cursor-pointer */}
 
-              <div className="flex md:flex-col flex-col space-y-3 text-center justify-center font-crimson text-xl">
+              <div className="flex md:flex-col flex-col space-y-1 text-center justify-center font-crimson text-xl -mt-7">
                 <p>
                   {dateTime.toLocaleDateString(undefined, {
                     weekday: "long",
@@ -241,7 +259,10 @@ function Navbar({}) {
                 </p>
               </div>
               <ThoughtOfTheDay />
-              <span className="flex items-center justify-center px-4 my-5 ">
+              <span
+                className="flex items-center justify-center px-4 my-5 "
+                onClick={closeModal}
+              >
                 <MdCancel className=" h-8 w-8 mx-auto md:hidden" />
               </span>
             </div>
@@ -250,6 +271,6 @@ function Navbar({}) {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

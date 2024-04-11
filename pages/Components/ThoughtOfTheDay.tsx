@@ -2,6 +2,7 @@
 // components/ThoughtOfTheDay.js
 
 import { useState } from "react";
+import { MdRefresh } from "react-icons/md";
 
 const thoughts = [
   "The only way to do great work is to love what you do. - Steve Jobs",
@@ -32,9 +33,18 @@ const ThoughtOfTheDay = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-md shadow-md mt-5">
-      <p className="text-lg font-bold mb-2 text-center">Thought of the Day:</p>
-      <p className="text-gray-800 text-center">{thought}</p>
+    <div className="bg-gray-100 p-4 rounded-md shadow-2xl mt-5 flex flex-col items-center mx-3">
+      <p className="text-lg font-bold mb-2 font-pacifico">
+        Thought of the Day:
+      </p>
+      <p className="text-gray-800 text-center font-serif">{thought}</p>
+
+      <button
+        className="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none self-end"
+        onClick={generateNewThought}
+      >
+        <MdRefresh />
+      </button>
     </div>
   );
 };
