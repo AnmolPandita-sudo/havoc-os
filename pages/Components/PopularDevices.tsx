@@ -75,12 +75,14 @@ function PopularDevices() {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      <section className=" object-contain max-h-full">
+      <section className="">
         <div className="flex flex-row mb-8 mt-10 justify-between mx-2">
-          <h2 className="md:text-5xl text-2xl">Popular Devices</h2>
+          <h2 className="md:text-4xl md:text-center text-2xl text-center justify-center">
+            Popular Devices
+          </h2>
           <Link
             href="/devices"
-            className=" text-base mt-1 md:mt-7 underline underline-offset-2 text-blue-700"
+            className="hidden md:block hover:underline hover:underline-offset-2 text-blue-700"
           >
             View All
           </Link>
@@ -108,6 +110,11 @@ function PopularDevices() {
             </div>
           ))}
         </div>
+        <Link href="/devices">
+          <p className="flex absulute md:hidden justify-end mr-3 underline underline-offset-2 text-blue-700">
+            View All
+          </p>
+        </Link>
       </section>
     </div>
   );

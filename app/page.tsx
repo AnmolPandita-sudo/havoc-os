@@ -32,7 +32,7 @@ function Home() {
       <Features />
       <Team />
       <Donate />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
