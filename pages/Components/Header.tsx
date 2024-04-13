@@ -20,7 +20,8 @@ function Navbar() {
     }
   };
 
-  const isHomePage = location.pathname === "/";
+  const isHomePage =
+    typeof window !== "undefined" && window.location.pathname === "/";
 
   return (
     <nav className="flex flex-row sticky z-10 top-0 items-center justify-between md:justify-evenly p-4">
