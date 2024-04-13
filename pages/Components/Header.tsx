@@ -12,7 +12,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import SideBar from "./SideBar";
 
-const Navbar = () => {
+function Navbar() {
   const scrollToSection = () => {
     const section = document.getElementById("ScreenShots");
     if (section) {
@@ -90,6 +90,10 @@ const Navbar = () => {
           {/* <div className="md:hover:bg-[#ffffff]"></div> */}
           <Payment isOpenByDefault={false} />
         </div>
+
+        {/* <button className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl">
+            <Payment isOpenByDefault={false} />
+          </button> */}
       </div>
 
       <div className=" absulute md:hidden ">
@@ -97,6 +101,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
