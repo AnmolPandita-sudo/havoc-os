@@ -46,55 +46,49 @@ const Navbar = () => {
       </button>
 
       <div className="hidden md:block">
-        <div className="flex flex-row ">
-          <div className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl ">
-            <Link href="/" className="headerButton fontDuration ml-5">
-              <AiOutlineHome className="ml-1" />
-              <span>Home</span>
-            </Link>
+        <div className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl ">
+          <Link href="/" className="headerButton fontDuration ml-5">
+            <AiOutlineHome className="ml-1" />
+            <span>Home</span>
+          </Link>
 
-            <Link href="/devices" className="headerButton fontDuration">
-              <AiOutlineMobile />
-              Devices
-            </Link>
+          <Link href="/devices" className="headerButton fontDuration">
+            <AiOutlineMobile />
+            Devices
+          </Link>
 
-            <ScrollLink
-              to="screenshots"
-              smooth={true}
-              duration={500}
-              onClick={scrollToSection}
-              className="headerButton fontDuration w-36"
-            >
-              <MdOutlineScreenshot />
-              ScreenShots
-            </ScrollLink>
+          <ScrollLink
+            to="screenshots"
+            smooth={true}
+            duration={500}
+            onClick={scrollToSection}
+            className="headerButton fontDuration w-36"
+          >
+            <MdOutlineScreenshot />
+            ScreenShots
+          </ScrollLink>
 
-            <ScrollLink
-              to="features"
-              smooth={true}
-              duration={500}
-              className="headerButton fontDuration"
-            >
-              <BsFillLightningChargeFill />
-              Features
-            </ScrollLink>
+          <ScrollLink
+            to="features"
+            smooth={true}
+            duration={500}
+            className="headerButton fontDuration"
+          >
+            <BsFillLightningChargeFill />
+            Features
+          </ScrollLink>
 
-            <ScrollLink
-              to="teams"
-              smooth={true}
-              duration={500}
-              className="headerButton fontDuration"
-            >
-              <MdGroup />
-              <span className="md:mt-0 mt-3">Teams</span>
-            </ScrollLink>
-            {/* <div className="md:hover:bg-[#ffffff]"></div> */}
-            <Payment isOpenByDefault={false} />
-          </div>
-
-          {/* <button className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl">
-            <Payment isOpenByDefault={false} />
-          </button> */}
+          <ScrollLink
+            to="teams"
+            smooth={true}
+            duration={500}
+            className="headerButton fontDuration"
+          >
+            <MdGroup />
+            <span className="md:mt-0 mt-3">Teams</span>
+          </ScrollLink>
+          {/* <div className="md:hover:bg-[#ffffff]"></div> */}
+          <Payment isOpenByDefault={false} />
         </div>
       </div>
 
