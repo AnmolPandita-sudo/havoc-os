@@ -12,7 +12,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import SideBar from "./SideBar";
 
-const Navbar = () => {
+function Navbar() {
   const scrollToSection = () => {
     const section = document.getElementById("ScreenShots");
     if (section) {
