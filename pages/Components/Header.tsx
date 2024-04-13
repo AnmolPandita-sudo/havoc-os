@@ -46,7 +46,7 @@ const Navbar = () => {
       </button>
 
       <div className="hidden md:block">
-        <div className="flex flex-row ">
+        
           <div className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl ">
             <Link href="/" className="headerButton fontDuration ml-5">
               <AiOutlineHome className="ml-1" />
@@ -95,7 +95,7 @@ const Navbar = () => {
           {/* <button className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl">
             <Payment isOpenByDefault={false} />
           </button> */}
-        </div>
+        
       </div>
 
       <div className=" absulute md:hidden ">
