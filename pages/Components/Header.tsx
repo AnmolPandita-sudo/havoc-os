@@ -1,7 +1,7 @@
 "use client";
 // to use unmovable header just add " sticky z-1 top-0 " inside className of first div inside return
 import "tailwindcss/tailwind.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Payment from "@/pages/Components/Payment";
 import { AiOutlineHome, AiOutlineMobile } from "react-icons/ai";
 import { MdGroup, MdOutlineScreenshot } from "react-icons/md";
@@ -13,16 +13,8 @@ import Link from "next/link";
 import SideBar from "./SideBar";
 
 function Navbar() {
-  const scrollToSection = () => {
-    const section = document.getElementById("ScreenShots");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const isHomePage =
     typeof window !== "undefined" && window.location.pathname === "/";
-
   return (
     <nav className="flex flex-row sticky z-10 top-0 items-center justify-between md:justify-evenly p-4">
       <button
@@ -62,13 +54,11 @@ function Navbar() {
             to="screenshots"
             smooth={true}
             duration={500}
-            onClick={scrollToSection}
             className="headerButton fontDuration w-36"
           >
             <MdOutlineScreenshot />
             ScreenShots
           </ScrollLink>
-
           <ScrollLink
             to="features"
             smooth={true}
@@ -88,13 +78,17 @@ function Navbar() {
             <MdGroup />
             <span className="md:mt-0 mt-3">Teams</span>
           </ScrollLink>
-          {/* <div className="md:hover:bg-[#ffffff]"></div> */}
-          <Payment isOpenByDefault={false} />
-        </div>
-
-        {/* <button className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl">
+          <p> </p>
+          <p> </p>
+          {/* <div className="headerButton fontDuration mr-5 p-5">
             <Payment isOpenByDefault={false} />
-          </button> */}
+          </div> */}
+        </div>
+      </div>
+      <div className="hidden md:block">
+        <button className="flex items-center space-x-3 mr-5 h-16 bg-[#dcd7d7] rounded-xl headerButton fontDuration w-48">
+          <Payment isOpenByDefault={false} />
+        </button>
       </div>
 
       <div className=" absulute md:hidden ">

@@ -1,5 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
+import { BsAndroid } from "react-icons/bs";
+import { FaTachometerAlt, FaPeopleCarry, FaGithubAlt } from "react-icons/fa";
+import { MdOutlineAppSettingsAlt } from "react-icons/md";
+import { SiVercel } from "react-icons/si";
+import PublishedWithChangesIcon from "@mui/icons-material/PublishedWithChanges";
 import "tailwindcss/tailwind.css";
 
 function Features() {
@@ -13,12 +19,21 @@ function Features() {
         ></script>
         <title>Havoc-OS</title>
       </head>
+      <p className="hidden md:block"> </p> <br />
       <h1 className="text-5xl text-center mt-28 mb-5">Features</h1>
-
+      {/* 
+      .
+      . 
+      . 
+      . 
+      . 
+      */}
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="m-10 max-w-sm overflow-hidden shadow-lg  rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <AndroidIcon className="w-full" /> */}
-          <div className="text-center px-6 py-4">
+        <div className="m-7 w-98 md:w-[450px] overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <BsAndroid className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
+          <div className="text-center px-6 py-4 flex-grow">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Up-to-date
             </div>
@@ -28,8 +43,11 @@ function Features() {
           </div>
         </div>
 
-        <div className="m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
+        <div className="m-7 w-98 md:w-[450px]  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
           {/* <SettingsIcon className="w-full" /> */}
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <MdOutlineAppSettingsAlt className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Customizations
@@ -41,10 +59,18 @@ function Features() {
           </div>
         </div>
       </div>
-
+      {/* 
+      .
+      . 
+      . 
+      . 
+      . 
+      */}
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <VideoStableIcon className="w-full" /> */}
+        <div className="m-7 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <FaTachometerAlt className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Stability
@@ -55,8 +81,10 @@ function Features() {
           </div>
         </div>
 
-        <div className=" m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <ColorLensIcon className="w-full" /> */}
+        <div className=" m-7 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <SiVercel className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Material Design UI
@@ -67,8 +95,10 @@ function Features() {
           </div>
         </div>
 
-        <div className="m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <SupportAgentIcon className="w-full" /> */}
+        <div className="m-7 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <FaPeopleCarry className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Support
@@ -79,10 +109,11 @@ function Features() {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <StreamIcon className="w-full" /> */}
+        <div className="m-7 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <FaGithubAlt className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               Open Source
@@ -93,8 +124,10 @@ function Features() {
           </div>
         </div>
 
-        <div className=" m-10 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638]">
-          {/* <SystemUpdateIcon className="w-full" /> */}
+        <div className=" m-7 max-w-sm  overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#82A0A2] via-[#b2c9cb] to-[#82A0A2] flex flex-row items-center">
+          <div className="flex justify-center items-center bg-[#8CB6C3] p-3 rounded-2xl w-1/5 ml-2">
+            <PublishedWithChangesIcon className="text-center w-10 h-10 text-[#D8E9F0]" />
+          </div>
           <div className="text-center px-6 py-4">
             <div className="font-bold text-2xl mb-2 border-gray-500 border-b-2">
               OTA

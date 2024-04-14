@@ -12,7 +12,7 @@ import "app/globals.css";
 
 function AboutUs() {
   return (
-    <div className="bg-gradient-to-r from-[#f1f5f9] via-[#fdd7aa] to-[#f1f5f9]">
+    <div className="bg-[#E1EDF6]">
       <head>
         <script
           async

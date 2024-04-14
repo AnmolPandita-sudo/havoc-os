@@ -92,7 +92,7 @@ function PopularDevices() {
           {popularDevices.map((device, index) => (
             <div
               key={index}
-              className="justify-center min-w-[250px] md:min-w-[330px] bg-[#f9dfb3] rounded-lg p-6 shadow-2xl cursor-pointer border-solid border-2 border-gray-600 hover:border-blue-600"
+              className="justify-center min-w-[250px] md:min-w-[330px] bg-[#828D9D] rounded-lg p-6 shadow-2xl cursor-pointer border-solid border-2 border-gray-600 hover:border-blue-600"
             >
               <Link href="/devices">
                 <img
@@ -103,7 +103,7 @@ function PopularDevices() {
                 <h3 className="text-xl text-center font-semibold mb-2 mx-auto">
                   {device.name}
                 </h3>
-                <p className="text-blue-700 text-lg font-serif text-center">
+                <p className="text-white text-lg font-serif text-center">
                   {device.codeName}
                 </p>
               </Link>

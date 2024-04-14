@@ -17,7 +17,7 @@ function HomeScreen() {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      <div className="mx-auto bg-gradient-to-r from-[#dae6f1] via-blue-100 to-[#dae6f1] p-2 outline-double  outline-4 outline-offset-2 shadow-2xl mt-2">
+      <div className="mx-auto bg-[#C5E9F0] p-2 outline-double  outline-4 outline-offset-2 shadow-2xl mt-2">
         <div className="space-y-3 flex-flex-col justify-center items-center text-center">
           <h1 className=" font-serif text-4xl mx-2 font-semibold">
             Welcome to Havoc-OS
@@ -44,7 +44,7 @@ function HomeScreen() {
       </div>
       <div className="rounded-3xl px-4  min-h-full min-w-full p-2 outline-double  outline-4 outline-offset-2 shadow-2xl">
         <div className="flex md:flex-row flex-col justify-between ">
-          <div className="mt-5 bg-[#eaf3ff] text-center rounded-3xl mb-3 w-auto md:w-1/2 flex flex-col md:flex-col ml-auto md:ml-20 md:mt-10">
+          <div className="mt-5 bg-[#8EA6A0] text-center rounded-3xl mb-3 w-auto md:w-2/3 flex flex-col md:flex-col ml-auto md:ml-20 md:mt-10">
             <p className="font-medium font-serif ... m-5">
               Havoc-OS is an after-market firmware based on Android Open Source
               Project, inspired by Google Pixel with a refined Material Design

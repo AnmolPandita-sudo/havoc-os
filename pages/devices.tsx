@@ -33,7 +33,7 @@ function Devices() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#f1f5f9] via-[#fdd7aa] to-[#f1f5f9]">
+    <div className="bg-[#E1EDF6]">
       <head>
         <script
           async
@@ -44,8 +44,8 @@ function Devices() {
       </head>
       <Header />
       <ScrollToTopButton />
-      <div className="sticky top-3 z-1 mt-2 justify-center items-center flex-row hidden md:block">
-        <div className="bg-[#fdd096] rounded-2xl flex flex-row justify-center items-center space-x-3">
+      <div className="sticky top-4 z-1 mt-2 justify-center items-center flex-row hidden md:block">
+        <div className="bg-[#a5b7cb] rounded-2xl flex flex-row justify-center items-center space-x-3">
           <Fade
             triggerOnce={true}
             delay={1200}

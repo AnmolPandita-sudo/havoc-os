@@ -27,9 +27,9 @@ function Team() {
   const handleGitHubAnmol = () => {
     router.push("https://github.com/AnmolPandita-sudo");
   };
-  // const handlEmailAnmol = () => {
-  //   window.location.href = "mailto:anmol.ap12@gmail.com";
-  // };
+  const handlEmailAnmol = () => {
+    window.location.href = "mailto:anmol.ap12@gmail.com";
+  };
 
   return (
     <div id="teams">
@@ -41,9 +41,13 @@ function Team() {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      <h1 className="text-5xl text-center mt-16 font-serif">Teams</h1>
+      <p> </p> <br />
+      <p> </p> <br />
+      <p> </p> <br />
+      <p> </p> <br />
+      <h1 className="text-5xl text-center font-serif">Teams</h1>
       <div className="flex flex-col md:flex-row justify-center mt-10 mb-10 p-5 ">
-        <div className="max-w-md md:w-[400px] overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638] flex justify-center items-center h-50 md:mr-10 md:mb-0 mb-5">
+        <div className="max-w-md md:w-[400px] overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#8aa6a9] via-[#cef0f4] to-[#8aa6a9] flex justify-center items-center h-50 md:mr-10 md:mb-0 mb-5">
           <img
             className=" m-5 w-28 rounded-full"
             src="https://havoc-os.com/src/img/team/anushek.jpg"
@@ -74,7 +78,7 @@ function Team() {
           </div>
         </div>
 
-        <div className="max-w-lg md:w-[400px] overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#ffa638] via-[#fdd6a2] to-[#ffa638] flex justify-center items-center h-50 md:ml-10">
+        <div className="max-w-lg md:w-[400px] overflow-hidden shadow-lg rounded-xl bg-gradient-to-r from-[#8aa6a9] via-[#cef0f4] to-[#8aa6a9] flex justify-center items-center h-50 md:ml-10">
           <Image
             className=" m-5 w-28 rounded-full"
             src={anmol}
@@ -95,10 +99,10 @@ function Team() {
                 onClick={handleGitHubAnmol}
                 className="cursor-pointer text-blue-800 h-8 w-8"
               />
-              {/* <SiGmail
+              <SiGmail
                 onClick={handlEmailAnmol}
                 className="cursor-pointer text-blue-800 h-8 w-8"
-              /> */}
+              />
             </div>
           </div>
         </div>

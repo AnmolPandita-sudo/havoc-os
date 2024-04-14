@@ -51,6 +51,7 @@ body {
   .homeScreenButton {
     @apply bg-[#2f7bdf] text-white py-4 px-4 mb-5 rounded-lg flex flex-row font-crimson
   }
+
 }
 
 @layer utilities {
@@ -60,4 +61,5 @@ body {
     /* Change the value as needed */
     line-height: 1.25rem;
   }
+
 }

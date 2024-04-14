@@ -16,10 +16,12 @@ function Donate() {
         ></script>
         <title>Havoc-OS</title>
       </head>
-      <div className=" flex flex-col md:flex-row bg-gradient-to-r from-[#fdd7aa] via-[#fdc67f] to-[#fdd7aa] shadow-2xl mt-28 h-auto md:h-80 space-x-20 md:space-x-96">
+      <div className=" flex flex-col md:flex-row bg-[#9BB6B9] shadow-2xl mt-28 h-auto md:h-80 space-x-20 md:space-x-96">
         <div className="flex flex-col mt-20 md:mt-0 text-center justify-between md:p-24">
           <h1 className=" font-extrabold font-serif text-4xl">Contribute</h1>
-          <p>Do you like our project? Show your support by donating.</p>
+          <p className="md:w-auto w-5/6 mx-auto">
+            Do you like our project? Show your support by donating.
+          </p>
           <div className="flex flex-row items-center justify-center">
             <Link
               href={"https://www.paypal.com/paypalme/ANUSHEK"}
@@ -39,7 +41,7 @@ function Donate() {
           src={donate}
           alt="donate_logo"
           height={300}
-          className="w-44 items-center justify-between "
+          className="w-44 items-center justify-between"
         />
       </div>
     </div>

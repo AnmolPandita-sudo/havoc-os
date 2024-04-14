@@ -7,10 +7,11 @@ import Footer from "@/pages/Components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 import "app/globals.css";
+import Payment from "./Components/Payment";
 
 function AboutUs() {
   return (
-    <div>
+    <div className=" bg-gradient-to-r from-[#d4edff] via-[#E1EDF6] to-[#d4edff]">
       <head>
         <script
           async
@@ -21,9 +22,9 @@ function AboutUs() {
       </head>
       <Header />
 
-      <div className="flex flex-col justify-center items-center text-center min-h-min bg-gradient-to-r from-[#f1f5f9] via-[#fdd7aa] to-[#f1f5f9]">
+      <div className="flex flex-col justify-center items-center text-center min-h-min ">
         <div className="px-4 md:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-[#e9c599] via-[#f1f5f9] to-[#e9c599] rounded-md shadow-2xl w-[80%] mx-auto p-6 text-gray-700 font-medium m-[44px]">
+          <div className="bg-gradient-to-r from-[#b2dbf9] via-[#d4edff] to-[#b2dbf9] rounded-md shadow-2xl w-[80%] mx-auto p-6 text-gray-700 font-medium m-[44px]">
             <h1 className="text-4xl md:text-5xl font-crimson font-bold text-black text-center">
               Changelog
             </h1>
@@ -31,7 +32,7 @@ function AboutUs() {
             <div className="mb-3 border-stone-500 rounded-full border-dotted border-2">
               <p>Initial Android 13.0 Release</p>
             </div>
-            <div className="md:mr-44 md:space-y-2">
+            <div className="space-y-2 text-center">
               <p>
                 You can support the work we do by contributing towards this
                 project. This will help us pay for the servers and other

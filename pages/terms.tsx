@@ -10,7 +10,7 @@ import "app/globals.css";
 
 function terms() {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-[#d4edff] via-[#E1EDF6] to-[#d4edff]">
       <head>
         <script
           async
@@ -21,9 +21,9 @@ function terms() {
       </head>
       <Header />
 
-      <div className="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-[#f1f5f9] via-[#fdd7aa] to-[#f1f5f9]">
+      <div className="flex flex-col justify-center items-center h-screen">
         <div className="-mt-20 w-full px-4 md:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-[#e9c599] via-[#f1f5f9] to-[#e9c599] rounded-md shadow-md p-6 mb-5 mt-16 md:mt-5 font-semibold">
+          <div className="bg-gradient-to-r from-[#b2dbf9] via-[#d4edff] to-[#b2dbf9] rounded-md shadow-md p-6 mb-5 mt-16 md:mt-5 font-semibold">
             <h1 className="text-5xl font-crimson font-bold text-center mb-4">
               Terms Of Use
             </h1>
