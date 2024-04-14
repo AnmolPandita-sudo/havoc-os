@@ -11,7 +11,6 @@ import ScreenShots from "@/pages/Components/ScreenShots";
 import PopularDevices from "@/pages/Components/PopularDevices";
 import Donate from "@/pages/Components/Donate";
 import ScrollToTopButton from "@/pages/Components/ScrollToTopButton";
-import dynamic from "next/dynamic";
 
 function Home() {
   return (
