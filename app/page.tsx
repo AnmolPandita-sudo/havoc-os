@@ -37,5 +37,5 @@ function Home() {
   );
 }
 
-// export default Home;
-export default dynamic(() => Promise.resolve(Home), { ssr: false });
+export default Home;
+// export default dynamic(() => Promise.resolve(Home), { ssr: false });
